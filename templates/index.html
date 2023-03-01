@@ -1,0 +1,523 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+
+{% block content %}
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Search Section Start-->
+    <section class="search" style="background-image: url('assets/img/carousel2.jpg');">
+        <div class="container-fluid">
+            <div class="search-background">
+                <div class="text-center">
+                    <span class="heading">Search Projects</span>
+                </div>
+                <div class="main-search">
+                    <div class="main-row">
+                        <div class="search-ms">
+                            <input type="text" placeholder="Window, roof, etc">
+                        </div>
+                        <div class="location d-flex flex-row">
+                            <!-- <span class="location-icon"><i class="fa-solid fa-location-dot"></i></span>
+                                <label for=""> Location</label>
+                                <i class="fa-solid fa-angle-down float-right"></i> -->
+                            <!-- <select class="form-select" aria-label="Default select example">
+                                    
+                                    <option selected><span> <i class="fa-solid fa-angle-down float-right"></i></span> Location</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select> -->
+                            <span class="location-icon"><i class="fa-solid fa-location-dot"></i></span>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value=""> Please select a region.</option>
+                                <option value="Alabama">Alabama</option>
+                                <option value="Alaska">Alaska</option>
+                                <option value="Arizona">Arizona</option>
+                                <option value="Arkansas">Arkansas</option>
+                                <option value="California">California</option>
+                                <option value="Colorado">Colorado</option>
+                                <option value="Connecticut">Connecticut</option>
+                                <option value="Delaware">Delaware</option>
+                                <option value="District of Columbia">District of Columbia</option>
+                                <option value="Florida">Florida</option>
+                                <option value="Georgia">Georgia</option>
+                                <option value="Hawaii">Hawaii</option>
+                                <option value="Idaho">Idaho</option>
+                                <option value="Illinois">Illinois</option>
+                                <option value="Indiana">Indiana</option>
+                                <option value="Iowa">Iowa</option>
+                                <option value="Kansas">Kansas</option>
+                                <option value="Kentucky">Kentucky</option>
+                                <option value="Louisiana">Louisiana</option>
+                                <option value="Maine">Maine</option>
+                                <option value="Maryland">Maryland</option>
+                                <option value="Massachusetts">Massachusetts</option>
+                                <option value="Michigan">Michigan</option>
+                                <option value="Minnesota">Minnesota</option>
+                                <option value="Mississippi">Mississippi</option>
+                                <option value="Missouri">Missouri</option>
+                                <option value="Montana">Montana</option>
+                                <option value="Nebraska">Nebraska</option>
+                                <option value="Nevada">Nevada</option>
+                                <option value="New Hampshire">New Hampshire</option>
+                                <option value="New Jersey">New Jersey</option>
+                                <option value="New Mexico">New Mexico</option>
+                                <option value="New York">New York</option>
+                                <option value="North Carolina">North Carolina</option>
+                                <option value="North Dakota">North Dakota</option>
+                                <option value="Ohio">Ohio</option>
+                                <option value="Oklahoma">Oklahoma</option>
+                                <option value="Oregon">Oregon</option>
+                                <option value="Pennsylvania">Pennsylvania</option>
+                                <option value="Rhode Island">Rhode Island</option>
+                                <option value="South Carolina">South Carolina</option>
+                                <option value="South Dakota">South Dakota</option>
+                                <option value="Tennessee">Tennessee</option>
+                                <option value="Texas">Texas</option>
+                                <option value="Utah">Utah</option>
+                                <option value="Vermont">Vermont</option>
+                                <option value="Virginia">Virginia</option>
+                                <option value="Washington">Washington</option>
+                                <option value="West Virginia">West Virginia</option>
+                                <option value="Wisconsin">Wisconsin</option>
+                                <option value="Wyoming">Wyoming</option>
+                            </select>
+
+                        </div>
+                        <div class="button">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="extended-search">
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="head">
+                                <label for="Date"> Date Range</label>
+                            </div>
+                            <div class="date">
+                                <form action="/action_page.php">
+                                    <input type="date" id="birthday" name="birthday">
+                                    <span>to</span>
+                                    <input type="date" id="birthday" name="birthday">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="head">
+                                <Label>Bid Amount</Label>
+
+                            </div>
+                            <div class="amount">
+                                <input type="number" placeholder="100   $" />
+                                <span>to</span>
+                                <input type="number" placeholder="5000000  $" />
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="head">
+                                <label>status</label>
+                            </div>
+                            <div class="status">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="">Solicicated</option>
+                                    <option value="Alabama">UnSolicicated</option>
+                                    <option value="Alaska">None</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="show-more text-center ">
+                    <i class="fa-solid fa-angle-down"></i>
+                    <span> More Options</span>
+                </div> -->
+                <div class="show-more text-center ">
+                    <i class="fa-solid fa-angle-up"></i>
+                    <span> Less Options</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Search Section Start-->
+   
+
+    <!-- main Section Start-->
+    <!-- <section class="main">
+
+    </section> -->
+    <!-- main Section Start-->
+
+    <!-- portfolio Section Start-->
+    <section class=" portfolio">
+
+    </section>
+    <!-- portfolio Section Start-->
+
+
+
+
+
+
+    <!-- Calender Update Section Start-->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3 project-update">
+                    <div class="pu">
+                        <div>
+                            <h4>Reacent Updates</h4>
+                        </div>
+                        <ul style='padding-left: 15px;' ;>
+                            <li>
+                                <spain style='color:red font' ; class="proj-status"> Project Completed</spain>
+                                <spain class="date" ;>12-15-2022 </spain><br>
+
+                                <span class="proj-heading">Hudson City Hall ADA ImprovementsLorem Ipsum is simply dummy
+                                    text of the printing ....</span>
+
+                            </li>
+                            <li>
+                                <spain style='color:red font' ; class="proj-status"> Project Completed</spain>
+                                <spain class="date" ;>12-15-2022 </spain><br>
+
+                                <span class="proj-heading">Hudson City Hall ADA ImprovementsLorem Ipsum is simply dummy
+                                    text of the printing ....</span>
+
+                            </li>
+                            <li>
+                                <spain style='color:red font' ; class="proj-status"> Project Completed</spain>
+                                <spain class="date" ;>12-15-2022 </spain><br>
+
+                                <span class="proj-heading">Hudson City Hall ADA ImprovementsLorem Ipsum is simply dummy
+                                    text of the printing ....</span>
+
+                            </li>
+                            <li>
+                                <spain style='color:red font' ; class="proj-status"> Project Completed</spain>
+                                <spain class="date" ;>12-15-2022 </spain><br>
+
+                                <span class="proj-heading">Hudson City Hall ADA ImprovementsLorem Ipsum is simply dummy
+                                    text of the printing ....</span>
+
+                            </li>
+                            <li>
+                                <spain style='color:red font' ; class="proj-status"> Project Completed</spain>
+                                <spain class="date" ;>12-15-2022 </spain><br>
+
+                                <span class="proj-heading">Hudson City Hall ADA ImprovementsLorem Ipsum is simply dummy
+                                    text of the printing ....</span>
+
+                            </li>
+
+                            <li>
+                                <spain style='color:red font' ; class="proj-status"> Project Completed</spain>
+                                <spain class="date" ;>12-15-2022 </spain><br>
+
+                                <span class="proj-heading">Hudson City Hall ADA ImprovementsLorem Ipsum is simply dummy
+                                    text of the printing ....</span>
+
+                            </li>
+                            <li>
+                                <spain style='color:red font' ; class="proj-status"> Project Completed</spain>
+                                <spain class="date" ;>12-15-2022 </spain><br>
+
+                                <span class="proj-heading">Hudson City Hall ADA ImprovementsLorem Ipsum is simply dummy
+                                    text of the printing ....</span>
+
+                            </li>
+                            <li>
+                                <spain style='color:red font' ; class="proj-status"> Project Completed</spain>
+                                <spain class="date" ;>12-15-2022 </spain><br>
+
+                                <span class="proj-heading">Hudson City Hall ADA ImprovementsLorem Ipsum is simply dummy
+                                    text of the printing ....</span>
+
+                            </li>
+                            <li>
+                                <spain style='color:red font' ; class="proj-status"> Project Completed</spain>
+                                <spain class="date" ;>12-15-2022 </spain><br>
+
+                                <span class="proj-heading">Hudson City Hall ADA ImprovementsLorem Ipsum is simply dummy
+                                    text of the printing ....</span>
+
+                            </li>
+                            <li>
+                                <spain style='color:red font' ; class="proj-status"> Project Completed</spain>
+                                <spain class="date" ;>12-15-2022 </spain><br>
+
+                                <span class="proj-heading">Hudson City Hall ADA ImprovementsLorem Ipsum is simply dummy
+                                    text of the printing ....</span>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 calander">
+                    <div class="ca">
+                        <div>
+                            <h4>Job Calender</h4>
+                        </div>
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">Bid Date</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">Prebid Date</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+
+                            </div>
+                        </div>
+                        <!-- Main Calander Section Start -->
+
+                        <!-- Main Calander Section Emd -->
+
+
+                    </div>
+                </div>
+                <div class="col-3 project">
+                    <div class="pr">
+                        <div>
+                            <h4>Current Projects</h4>
+                        </div>
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">InProgress</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">Completed</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <ul style='padding-left: 15px;' ;>
+                                    <li>
+                                        <spain style='color:red font' ; class="proj-head"> Hudson City Hall ADA </spain>
+                                        <spain class="date" ;>12-15-2022 </spain><br>
+
+                                        <span class="proj-description">Hudson City Hall ADA ImprovementsLorem Ipsum is
+                                            simply dummy
+                                            text of the printing ....</span>
+                                    </li>
+                                    <li>
+                                        <spain style='color:red font' ; class="proj-head"> Hudson City Hall ADA </spain>
+                                        <spain class="date" ;>12-15-2022 </spain><br>
+
+                                        <span class="proj-description">Hudson City Hall ADA ImprovementsLorem Ipsum is
+                                            simply dummy
+                                            text of the printing ....</span>
+                                    </li>
+                                    <li>
+                                        <spain style='color:red font' ; class="proj-head"> Hudson City Hall ADA </spain>
+                                        <spain class="date" ;>12-15-2022 </spain><br>
+
+                                        <span class="proj-description">Hudson City Hall ADA ImprovementsLorem Ipsum is
+                                            simply dummy
+                                            text of the printing ....</span>
+                                    </li>
+                                    <li>
+                                        <spain style='color:red font' ; class="proj-head"> Hudson City Hall ADA </spain>
+                                        <spain class="date" ;>12-15-2022 </spain><br>
+
+                                        <span class="proj-description">Hudson City Hall ADA ImprovementsLorem Ipsum is
+                                            simply dummy
+                                            text of the printing ....</span>
+                                    </li>
+
+                                    <li>
+                                        <spain style='color:red font' ; class="proj-head"> Hudson City Hall ADA </spain>
+                                        <spain class="date" ;>12-15-2022 </spain><br>
+
+                                        <span class="proj-description">Hudson City Hall ADA ImprovementsLorem Ipsum is
+                                            simply dummy
+                                            text of the printing ....</span>
+                                    </li>
+                                    <li>
+                                        <spain style='color:red font' ; class="proj-head"> Hudson City Hall ADA </spain>
+                                        <spain class="date" ;>12-15-2022 </spain><br>
+
+                                        <span class="proj-description">Hudson City Hall ADA ImprovementsLorem Ipsum is
+                                            simply dummy
+                                            text of the printing ....</span>
+                                    </li>
+
+
+
+
+
+
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <ul style='padding-left: 15px;' ;>
+                                    <li>
+                                        <spain style='color:red font' ; class="proj-head"> Hudson City Hall ADA </spain>
+                                        <spain class="date" ;>12-15-2022 </spain><br>
+
+                                        <span class="proj-description">Hudson City Hall ADA ImprovementsLorem Ipsum is
+                                            simply dummy
+                                            text of the printing ....</span>
+                                    </li>
+                                    <li>
+                                        <spain style='color:red font' ; class="proj-head"> Hudson City Hall ADA </spain>
+                                        <spain class="date" ;>12-15-2022 </spain><br>
+
+                                        <span class="proj-description">Hudson City Hall ADA ImprovementsLorem Ipsum is
+                                            simply dummy
+                                            text of the printing ....</span>
+                                    </li>
+                                    <li>
+                                        <spain style='color:red font' ; class="proj-head"> Hudson City Hall ADA </spain>
+                                        <spain class="date" ;>12-15-2022 </spain><br>
+
+                                        <span class="proj-description">Hudson City Hall ADA ImprovementsLorem Ipsum is
+                                            simply dummy
+                                            text of the printing ....</span>
+                                    </li>
+                                    <li>
+                                        <spain style='color:red font' ; class="proj-head"> Hudson City Hall ADA </spain>
+                                        <spain class="date" ;>12-15-2022 </spain><br>
+
+                                        <span class="proj-description">Hudson City Hall ADA ImprovementsLorem Ipsum is
+                                            simply dummy
+                                            text of the printing ....</span>
+                                    </li>
+
+                                    <li>
+                                        <spain style='color:red font' ; class="proj-head"> Hudson City Hall ADA </spain>
+                                        <spain class="date" ;>12-15-2022 </spain><br>
+
+                                        <span class="proj-description">Hudson City Hall ADA ImprovementsLorem Ipsum is
+                                            simply dummy
+                                            text of the printing ....</span>
+                                    </li>
+                                    <li>
+                                        <spain style='color:red font' ; class="proj-head"> Hudson City Hall ADA </spain>
+                                        <spain class="date" ;>12-15-2022 </spain><br>
+
+                                        <span class="proj-description">Hudson City Hall ADA ImprovementsLorem Ipsum is
+                                            simply dummy
+                                            text of the printing ....</span>
+                                    </li>
+
+
+
+
+
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Calender Update Section End-->
+    <!-- Authorities Section Start -->
+    <section>
+        <div class="container authorities">
+            <div class="row">
+                <div class="dev-authori">
+                    <span> Developmental Authorities</span>
+                </div>
+                <ul>
+                    <li class="authorities-img">
+                        <img src="assets/img/Authorities/28.png" alt="">
+                    </li>
+                    <li class="authorities-img">
+                        <img src="assets/img/Authorities/29.png" alt="">
+                    </li>
+                    <li class="authorities-img">
+                        <img src="assets/img/Authorities/30.png" alt="">
+                    </li>
+                    <li class="authorities-img">
+                        <img src="assets/img/Authorities/31.png" alt="">
+                    </li>
+                    <li class="authorities-img">
+                        <img src="assets/img/Authorities/32.png" alt="">
+                    </li>
+                    <li class="authorities-img">
+                        <img src="assets/img/Authorities/33.png" alt="">
+                    </li>
+                    <li class="authorities-img">
+                        <img src="assets/img/Authorities/34.png" alt="">
+                    </li>
+                    <li class="authorities-img">
+                        <img src="assets/img/Authorities/35.png" alt="">
+                    </li>
+
+                </ul>
+                <ul>
+                    <li class="authorities-img">
+                        <img src="assets/img/Authorities/36.png" alt="">
+                    </li>
+                    <li class="authorities-img">
+                        <img src="assets/img/Authorities/37.png" alt="">
+                    </li>
+                    <li class="authorities-img">
+                        <img src="assets/img/Authorities/38.png" alt="">
+                    </li>
+                    <li class="authorities-img">
+                        <img src="assets/img/Authorities/39.png" alt="">
+                    </li>
+                    <li class="authorities-img">
+                        <img src="assets/img/Authorities/40.png" alt="">
+                    </li>
+                    <li class="authorities-img">
+                        <img src="assets/img/Authorities/41.png" alt="">
+                    </li>
+                    <li class="authorities-img">
+                        <img src="assets/img/Authorities/42.png" alt="">
+                    </li>
+                    <li class="authorities-img">
+                        <img src="assets/img/Authorities/43.png" alt="">
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Authorities Section End -->
+
+
+
+    {% endblock content %}
+
+
+
